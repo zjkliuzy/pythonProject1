@@ -63,17 +63,15 @@ class IterableHelper:
     @staticmethod
     def get_count(iterable, func):
         count = 0
+
         for item in iterable:
             if func(item):
                 count += 1
         return count
 
     @staticmethod
-    def order_by(iterable,func):
+    def order_by(iterable, func):
         for r in range(len(iterable) - 1):
             for c in range(r + 1, len(iterable)):
-                # if iterable[r].money > iterable[c].money:
-                # if iterable[r].did > iterable[c].did:
-                # if iterable[r].eid > iterable[c].eid:
-                if func(iterable[r]) >func(iterable[c]):
-                    iterable[r],iterable[c] = iterable[c],iterable[r]
+                if func(iterable[r]) > func(iterable[c]):
+                    iterable[r], iterable[c] = iterable[c], iterable[r]
