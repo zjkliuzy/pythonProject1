@@ -1,4 +1,4 @@
-from common.iterable_tools import IterableHelper
+from common import IterableHelper
 
 
 class Employee:

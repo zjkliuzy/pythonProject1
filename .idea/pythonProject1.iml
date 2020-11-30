@@ -2,9 +2,9 @@
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/day17" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/project_month01" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/project_month01/employee_info_manager_system" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/m1/day17" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/m1/project_month01" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/m1/project_month01/employee_info_manager_system" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
