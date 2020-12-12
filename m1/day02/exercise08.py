@@ -14,5 +14,5 @@
 s = float(input("请输入距离："))
 v0 = float(input("请输入初速度："))
 t = float(input("请输入时间："))
-a = (s - v0 * t) * 2 / t ** 2
-print("加速度是：" + str(a))
+python = (s - v0 * t) * 2 / t ** 2
+print("加速度是：" + str(python))

@@ -59,8 +59,8 @@ print(list01 == list02)  # True
 # 判断两个变量存储的地址是否相同
 print(list01 is list02)  # False
 
-a, *b, c = "我是齐天大圣孙悟空"
-print(a)
+python, *b, c = "我是齐天大圣孙悟空"
+print(python)
 print(b)  # ['是', '齐', '天', '大', '圣', '孙', '悟']
 print(c)
 # 为什么a是list类型

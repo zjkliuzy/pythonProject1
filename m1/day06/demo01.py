@@ -44,9 +44,9 @@ tuple04 = 10, 20, 30
 print(tuple04)
 
 # 特殊3:拆包
-a, b, c = tuple04
-a, b, c = [10, 20, 30]
-a, b, c = "孙悟空"
-print(a)
+python, b, c = tuple04
+python, b, c = [10, 20, 30]
+python, b, c = "孙悟空"
+print(python)
 print(b)
 print(c)
