@@ -4,3 +4,4 @@ m2/day11/*.jpg
 m2/day16/*.txt
 m2/day19/*.txt
 .idea
+m2/day19/dict/server/__pycache__

@@ -1,4 +1,7 @@
+import warnings
+
 import pymysql
+from IPython.core.hooks import deprecated
 
 """
 
@@ -35,6 +38,7 @@ class DataDao:
             return True
 
     def query_id_by_name(self, uname):
+        warnings.warn("query_id_by_name is deprecated", DeprecationWarning)
         sql = "select id from user where name = %s"
         self.cur.execute(sql, [uname])
         one = self.cur.fetchone()
@@ -68,11 +72,15 @@ class DataDao:
             result = one[0]
             return result
 
-    def insert_log(self, id, word):
-        sql = "insert into history(user_id, word) VALUES (%s,%s)"
-        row = self.cur.execute(sql, [id, word])
-        self.db.commit()
-        return row
+    def insert_log(self, name, word):
+        sql = "insert into history(user_id, word) VALUES ((select id from user where name = %s),%s)"
+        try:
+            row = self.cur.execute(sql, [name, word])
+            self.db.commit()
+            return row
+        except:
+            self.db.rollback()
+            return None
 
     def query_history(self, uid):
         sql = "select u.name,h.word,h.time from history as h left join user as u on h.user_id= u.id where" \

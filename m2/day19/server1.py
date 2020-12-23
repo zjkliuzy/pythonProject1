@@ -43,8 +43,7 @@ class Handle:
     def query_word(self, data):
         temp = data.split(" ")
         result = self.db.query_by_word(temp[0])
-        id = self.db.query_id_by_name(temp[1])
-        self.db.insert_log(id, temp[0])
+        self.db.insert_log(temp[1], temp[0])  # 插入操作记录
         if not result:
             self.connfd.send(b"FAIL")
         else:
