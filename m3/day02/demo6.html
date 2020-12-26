@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            /*1*/
+            color: blue;
+        }
+
+        #d1 {
+            color: green;
+        }
+
+        .red {
+            color: red;
+        }
+
+        #d1 > div { /*100+1*/
+            color: purple;
+        }
+
+        #d1:hover,#d1>div:hover {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+<div class="red" id="d1">
+    hello world
+    <div>内部div</div>
+</div>
+</body>
+</html>

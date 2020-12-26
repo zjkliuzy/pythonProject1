@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动</title>
+    <style>
+        #parent > div {
+            width: 200px;
+            height: 200px;
+            /*float: left;*/
+        }
+
+        .red {
+            background-color: #ff0000;
+            float: left;
+        }
+
+        .green {
+            background-color: #008000;
+            float: left;
+        }
+
+        .blue {
+            background-color: #0000ff;
+            float: left;
+        }
+        span{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            float: left;
+        }
+        #parent{
+            border: 5px solid orange;
+            background-color: #ff00ff;
+            /*height: 200px;*/
+            /*float: left;*/
+            overflow: hidden;
+        }
+        .clear{
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+<div id="parent">
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+    <span></span>
+<!--    <p class="clear"></p>-->
+</div>
+</body>
+</html>
